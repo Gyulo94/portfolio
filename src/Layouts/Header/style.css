@@ -1,0 +1,69 @@
+#header {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  background-color: #1b1b1b;
+}
+
+.header-container {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.icon-logo-box {
+  width: 40px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-logo {
+  color: #632a7e;
+
+  font-family: "Pretendard";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: -0.4px;
+}
+
+.header-right-box {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.header-nav {
+  color: #c9c9c9;
+
+  font-family: "Pretendard";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: -0.4px;
+
+  cursor: pointer;
+}
+
+.project:hover,
+.about:hover {
+  color: #632a7e;
+  font-weight: 600;
+}
+
+.project-active,
+.about-active {
+  color: #632a7e;
+  font-weight: 600;
+}
