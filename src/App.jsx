@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import { ABOUT_PATH, HOME_PATH, PROJECTS_PATH } from "./constant";
-import Container from "./Layouts/Container";
+import Container from "./Layouts/Container/index";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Projects from "./pages/Proejcts";
