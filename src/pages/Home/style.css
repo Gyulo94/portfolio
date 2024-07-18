@@ -1,0 +1,116 @@
+#home-wrapper {
+  width: 100%;
+  padding: 80px 0 40px;
+  /* padding: 20px 0; */
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+  height: calc(100vh - 170px + 85px);
+}
+
+.home-container {
+  width: 1200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.home-right {
+  width: 600px;
+}
+
+.home-job {
+  font-family: "Nanum Gothic";
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.home-name {
+  font-size: 135px;
+  font-family: "Nanum Gothic";
+  font-style: italic;
+  font-weight: bold;
+}
+
+.home-description {
+  font-family: "Nanum Gothic";
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 140%;
+}
+
+@media (max-width: 1440px) {
+  .home-container {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .home-right {
+    width: 500px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .home-job {
+    font-size: 18px;
+  }
+  .home-name {
+    font-size: 120px;
+  }
+  .home-description {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 940px) {
+  .home-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .home-right {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-right {
+    width: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  #home-wrapper {
+    height: calc(100vh - 208px + 85px);
+  }
+}
+
+@media (max-width: 480px) {
+  .home-right {
+    width: 350px;
+  }
+  .home-job {
+    font-size: 16px;
+  }
+  .home-name {
+    font-size: 100px;
+  }
+  .home-description {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 380px) {
+  .home-right {
+    width: 300px;
+  }
+  .home-job {
+    font-size: 14px;
+  }
+  .home-name {
+    font-size: 80px;
+  }
+  .home-description {
+    font-size: 14px;
+  }
+}

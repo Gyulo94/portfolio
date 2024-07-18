@@ -6,9 +6,17 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Nanum Gothic";
+  src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.woff)
+    format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
 body {
   margin: 0;
-  min-width: 1440px;
+  color: #ebe7ef;
   font-family: "Pretendard", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -16,7 +24,6 @@ body {
 
 html {
   background: radial-gradient(#280a48, #20043d);
-  min-height: 80rem;
   list-style: none;
 }
 
