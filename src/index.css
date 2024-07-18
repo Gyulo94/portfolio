@@ -12,5 +12,14 @@ body {
   font-family: "Pretendard", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #181818;
+}
+
+html {
+  background: radial-gradient(#280a48, #20043d);
+  min-height: 80rem;
+  list-style: none;
+}
+
+* {
+  box-sizing: border-box;
 }

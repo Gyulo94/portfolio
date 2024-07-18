@@ -1,8 +1,11 @@
 #header {
+  position: fixed;
+  width: 100%;
   padding: 20px 0;
   display: flex;
   justify-content: center;
-  background-color: #1b1b1b;
+  background: #20043d;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1));
 }
 
 .header-container {
@@ -29,11 +32,11 @@
 }
 
 .header-logo {
-  color: #632a7e;
+  color: #ebe7ef;
 
   font-family: "Pretendard";
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 140%;
   letter-spacing: -0.4px;
 }
@@ -41,29 +44,31 @@
 .header-right-box {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 15px;
 }
 
-.header-nav {
-  color: #c9c9c9;
-
+.header-right-box li button {
   font-family: "Pretendard";
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 140%;
   letter-spacing: -0.4px;
-
+  border: none;
+  background-color: transparent;
+  border-radius: 6px;
+  color: #a18aba;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
-.project:hover,
-.about:hover {
-  color: #632a7e;
+.header-right-box li button:hover {
   font-weight: 600;
+  background-color: #1b082f;
+  color: #ebe7ef;
 }
 
-.project-active,
-.about-active {
-  color: #632a7e;
+.header-right-box li button.active {
   font-weight: 600;
+  background-color: #1b082f;
+  color: #ebe7ef;
 }
