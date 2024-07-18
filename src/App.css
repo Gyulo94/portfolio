@@ -20,7 +20,7 @@
 
   width: 24px;
   height: 24px;
-
+  color: #a18aba;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,8 +28,27 @@
   cursor: pointer;
 }
 
+.icon-button-large {
+  border-radius: 50% 50%;
+
+  width: 40px;
+  height: 40px;
+  color: #a18aba;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.icon-button-large:hover {
+  background-color: #1b082f;
+  color: #ebe7ef;
+}
+
 .icon-button:hover {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: #1b082f;
+  color: #ebe7ef;
 }
 
 .icon {
