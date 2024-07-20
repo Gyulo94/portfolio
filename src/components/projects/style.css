@@ -1,0 +1,71 @@
+.project-card {
+  padding: 24px;
+  margin: 12px;
+  background-color: #2f1d43;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  transition-duration: 300ms;
+  border: 1px solid #280a48;
+}
+
+.project-card:hover {
+  transform: scaleX(1.05) scaleY(1.05);
+  border-color: #280a48;
+  box-shadow: 0 2px 8px #7925d3;
+}
+
+.project-card a {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: -0.4px;
+  margin: 4px 0;
+  border-radius: 6px;
+  color: #a18aba;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.project-card a:hover {
+  font-weight: 600;
+  color: #ebe7ef;
+}
+
+.project-card img {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.project-title {
+  margin-top: 15px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.project-description {
+  font-size: 18px;
+  line-height: 140%;
+  margin: 16px 0;
+}
+
+.project-period {
+  font-size: 18px;
+  line-height: 140%;
+  margin: 4px 0;
+}
+
+.project-skills-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-top: 8px;
+  gap: 8px;
+}
+
+.project-skills {
+  padding: 4px 8px;
+  border-radius: 6px;
+}
