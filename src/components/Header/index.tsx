@@ -20,6 +20,7 @@ export default function Header() {
 
   const onNavButtonClickHander = (selectedButton: string) => {
     setSelectedNavButton(selectedButton);
+    navigate.push(`/${selectedButton}`);
   };
 
   const onSidebarClickHandler = () => {
