@@ -6,7 +6,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import "./style.css";
 
-export default function ClientComponent() {
+export default function Projects() {
   const [projects, setProjects] = useState<ProjectProps[]>([]);
   const [loading, setLoading] = useState(true);
 
