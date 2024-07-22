@@ -61,7 +61,7 @@ export default function Header() {
             <IoClose className="icon" />
           )}
         </div>
-        {isSidebarOpen && <Sidebar />}
+        {isSidebarOpen && <Sidebar sidebarOpen={setIsSidebarOpen} />}
       </div>
     </header>
   );
