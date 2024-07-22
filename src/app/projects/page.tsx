@@ -17,13 +17,13 @@ export default function Projects() {
       try {
         const response = await axios.get("/api/projects");
         setProjects(response.data);
+        router.refresh();
       } catch (error) {
         console.error("Error fetching projects:", error);
         setProjects([]);
       } finally {
         setLoading(false);
       }
-      router.refresh();
     }
 
     fetchProjects();
