@@ -8,6 +8,7 @@
   flex-direction: column;
   transition-duration: 300ms;
   border: 1px solid #280a48;
+  position: relative;
 }
 
 .project-card:hover {
@@ -33,9 +34,21 @@
   color: #ebe7ef;
 }
 
-.project-card img {
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+.project-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 60%;
+  overflow: hidden;
+  border-radius: 12px 12px 0 0;
+}
+
+.project-image-wrapper img {
+  transition: all 0.3s ease-in-out;
+}
+
+.project-image-wrapper img:hover {
+  transform: scale(1.1);
 }
 
 .project-title {
