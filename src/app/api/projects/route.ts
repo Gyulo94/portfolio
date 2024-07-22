@@ -1,4 +1,5 @@
 import axios from "axios";
+import { revalidatePath } from "next/cache";
 import { NextResponse } from "next/server";
 
 const notionSecret = process.env.NOTION_TOKEN;
@@ -20,6 +21,7 @@ export async function GET() {
         },
       }
     );
+    revalidatePath("/api/projects");
 
     return NextResponse.json(response.data.results);
   } catch (error) {
