@@ -3,12 +3,11 @@
 import ProjectItem from "@/components/projects";
 import { ProjectProps } from "@/types";
 import axios from "axios";
-import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import Loading from "../(loading)/page";
 import "./style.css";
 
 export default function Projects() {
-  const router = useRouter();
   const [projects, setProjects] = useState<ProjectProps[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -17,7 +16,6 @@ export default function Projects() {
       try {
         const response = await axios.get("/api/projects");
         setProjects(response.data);
-        router.refresh();
       } catch (error) {
         console.error("Error fetching projects:", error);
         setProjects([]);
@@ -29,11 +27,9 @@ export default function Projects() {
     fetchProjects();
   }, []);
 
-  if (loading) {
-    return <div>Loading...</div>;
-  }
-
-  return (
+  return loading ? (
+    <Loading />
+  ) : (
     <div id="project-wrapper">
       <h1 className="project-count">
         찰규의 프로젝트의 수는?

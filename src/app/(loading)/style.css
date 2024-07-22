@@ -1,0 +1,7 @@
+#loading-wrapper {
+  width: 100%;
+  height: calc(100vh - 170px + 85px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
