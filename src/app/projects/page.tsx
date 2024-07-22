@@ -3,10 +3,12 @@
 import ProjectItem from "@/components/projects";
 import { ProjectProps } from "@/types";
 import axios from "axios";
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import "./style.css";
 
 export default function Projects() {
+  const router = useRouter();
   const [projects, setProjects] = useState<ProjectProps[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -21,6 +23,7 @@ export default function Projects() {
       } finally {
         setLoading(false);
       }
+      router.refresh();
     }
 
     fetchProjects();
