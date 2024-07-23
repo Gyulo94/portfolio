@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   z-index: 1000;
-  height: calc(100vh - 170px + 85px);
+  height: calc(100vh - 153px + 85px);
 }
 
 .home-container {

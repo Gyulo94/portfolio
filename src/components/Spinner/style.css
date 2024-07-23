@@ -1,7 +1,13 @@
 #loading-wrapper {
   width: 100%;
-  height: calc(100vh - 170px + 85px);
+  height: calc(100vh - 153px + 85px);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 500px) {
+  #loading-wrapper {
+    height: calc(100vh - 126px);
+  }
 }

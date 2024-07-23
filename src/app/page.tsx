@@ -1,9 +1,15 @@
 "use client";
 import HOME_ANIMATION from "@/assets/lotties/developer-animation.json";
+import { useEffect, useState } from "react";
 import Animation from "../components/Animation";
 import "./style.css";
 
 export default function Home() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setLoading(false);
+  }, []);
   return (
     <main id="home-wrapper">
       <div className="home-container">
