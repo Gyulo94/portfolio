@@ -4,7 +4,7 @@ import ProjectItem from "@/components/projects";
 import { ProjectProps } from "@/types";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import Loading from "../(loading)/page";
+import Loading from "../../components/Spinner";
 import "./style.css";
 
 export default function Projects() {
