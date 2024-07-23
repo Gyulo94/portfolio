@@ -27,19 +27,23 @@ export default function Projects() {
     fetchProjects();
   }, []);
 
-  return loading ? (
-    <Loading />
-  ) : (
-    <div id="project-wrapper">
-      <h1 className="project-count">
-        찰규의 프로젝트의 수는?
-        <span style={{ color: "#7925d3" }}> {projects.length}</span>
-      </h1>
-      <div className="project-container">
-        {projects.map((project: ProjectProps) => (
-          <ProjectItem key={project.id} {...project} />
-        ))}
-      </div>
-    </div>
+  return (
+    <>
+      {loading ? (
+        <Loading />
+      ) : (
+        <div id="project-wrapper">
+          <h1 className="project-count">
+            찰규의 프로젝트의 수는?
+            <span style={{ color: "#7925d3" }}> {projects.length}</span>
+          </h1>
+          <div className="project-container">
+            {projects.map((project: ProjectProps) => (
+              <ProjectItem key={project.id} {...project} />
+            ))}
+          </div>
+        </div>
+      )}
+    </>
   );
 }

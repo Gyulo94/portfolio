@@ -21,7 +21,7 @@ export async function GET() {
         },
       }
     );
-    revalidatePath("/projects");
+    revalidatePath("/api/projects");
 
     return NextResponse.json(response.data.results);
   } catch (error) {
