@@ -99,3 +99,8 @@ html {
 .logo-icon {
   background-image: url(../assets/images/icon.png);
 }
+
+.bar {
+  padding-top: 5px;
+  border-bottom: 1px solid rgba(161, 138, 186, 0.2);
+}
