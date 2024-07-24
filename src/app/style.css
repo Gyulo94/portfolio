@@ -30,13 +30,34 @@
   font-family: "Nanum Gothic";
   font-style: italic;
   font-weight: bold;
+  line-height: 100%;
 }
 
 .home-description {
   font-family: "Nanum Gothic";
   font-size: 20px;
   font-weight: lighter;
-  line-height: 140%;
+}
+
+.home-button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.home-button {
+  margin-top: 20px;
+  background-color: #280a48;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.home-button:hover {
+  background-color: #7925d3;
+  font-weight: 600;
 }
 
 @media (max-width: 1440px) {
@@ -100,7 +121,7 @@
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 400px) {
   .home-right {
     width: 300px;
   }
