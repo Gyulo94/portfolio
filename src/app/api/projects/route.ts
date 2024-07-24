@@ -11,6 +11,12 @@ export async function GET() {
       `https://api.notion.com/v1/databases/${notionDatabaseId}/query`,
       {
         page_size: 100,
+        sorts: [
+          {
+            property: "작업기간",
+            direction: "descending",
+          },
+        ],
       },
       {
         headers: {
