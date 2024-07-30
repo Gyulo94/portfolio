@@ -9,6 +9,21 @@ export const metadata: Metadata = {
   icons: {
     icon: "/icon.png",
   },
+  openGraph: {
+    title: "찰규의 작업 공간",
+    description: "찰규의 작업 공간에 오신 것을 환영합니다.",
+    url: "https://gyuspace.vercel.app",
+    siteName: "찰규의 작업 공간",
+    images: [
+      {
+        url: "/opImage.png",
+        width: 800,
+        height: 600,
+        alt: "찰규의 작업 공간",
+      },
+    ],
+    type: "website",
+  },
 };
 
 export default function RootLayout({
