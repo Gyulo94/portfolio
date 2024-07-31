@@ -107,6 +107,9 @@
 }
 
 @media (max-width: 480px) {
+  #home-wrapper {
+    margin-top: 30px;
+  }
   .home-right {
     width: 350px;
   }
