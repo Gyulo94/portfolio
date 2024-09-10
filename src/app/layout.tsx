@@ -33,9 +33,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="kr">
-      <Header />
-      <body>{children}</body>
-      <Footer />
+      <body>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
